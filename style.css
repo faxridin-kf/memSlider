@@ -32,6 +32,7 @@ body {
 }
 .slider-items .item img {
   max-width: 100%;
+  width: 900px;
   height: 500px;
 }
 .slider-items .item p {
@@ -49,9 +50,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-.slider-nav-item:focus {
-  background-color: red;
 }
 .slider-nav .slider-nav-item {
   height: 25px;
@@ -114,3 +112,60 @@ body {
 #first-mem-btn-5:checked ~ .swit label:nth-child(5) span:hover {
   border: 0.1rem solid brown;
 } */
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 396px;
+    height: 440px;
+  }
+  .slider-items {
+    width: 5005px;
+    height: 100%;
+    display: flex;
+  }
+  .slider-nav {
+    position: absolute;
+    bottom: 27px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .slider-items .item {
+    transition: all 1s ease;
+    width: 16%;
+  }
+  .slider-items .item img {
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+  }
+
+  #s1:checked ~ .s1 {
+    margin-left: 0;
+  }
+
+  #s2:checked ~ .s1 {
+    margin-left: -16%;
+  }
+
+  #s3:checked ~ .s1 {
+    margin-left: -32%;
+  }
+
+  #s4:checked ~ .s1 {
+    margin-left: -48%;
+  }
+  #s5:checked ~ .s1 {
+    margin-left: -64%;
+  }
+}
