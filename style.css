@@ -81,7 +81,7 @@ body {
 #s5:checked ~ .s1 {
   margin-left: -80%;
 }
-/* 
+
 #first-mem-btn-1:checked ~ .slider-nav-item label:nth-child(1) span {
   background-color: aliceblue;
 }
@@ -111,7 +111,7 @@ body {
 }
 #first-mem-btn-5:checked ~ .swit label:nth-child(5) span:hover {
   border: 0.1rem solid brown;
-} */
+}
 
 @media screen and (max-width: 768px) {
   .wrapper {
